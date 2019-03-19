@@ -1,7 +1,7 @@
-Feature: Register User
-  In order to keep track of the users that are registered in the web
+Feature: Register Restaurant
+  In order to keep track of the restaurants I visit
   As a user
-  I want to know how many user are registered in the web
+  I want to register a restaurant together with its location and contact details
 
   Background: There is a registered user
     Given Exists a user "user" with password "password"
