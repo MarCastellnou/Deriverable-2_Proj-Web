@@ -1,9 +1,12 @@
+
 from django.db import models
+from django.contrib.auth.models import User
+from django.urls import reverse
 
 # Create your models here.
-class Criptomonedas(models.Model):
+class Criptomoneda(models.Model):
 
-    name = models.CharField(max_length=32, default="", blank=False)
+    name = models.CharField(max_length=32, default="")
 
     def get_absolute_url(self):
         return reverse('criptomonedas-detail', args=[str(self.name)])
@@ -12,7 +15,7 @@ class Criptomonedas(models.Model):
         return self.name
 
 
-class Noticias(models.Model):
+class Noticia(models.Model):
 
     titular = models.CharField(max_length=32, default="", blank=False)
 
@@ -22,7 +25,7 @@ class Noticias(models.Model):
     def __str__(self):
         return self.titular
 
-class Cotizaciones(models.Model):
+class Cotizacione(models.Model):
 
     price = models.IntegerField(max_length=150, default= "", blank=False)
 
