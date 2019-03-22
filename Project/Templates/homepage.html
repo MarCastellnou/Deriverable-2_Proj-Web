@@ -5,6 +5,30 @@
     <title>HOMEPAGE</title>
 </head>
 <body>
-    <h1>HELLO!!</h1>
+    <h1>BIENVENIDO</h1>
+
+       <h1>CriptomonedasApp</h1>
+   <header id="main-header">
+		<nav>
+            {% block sidebar %}
+                <ul>
+                    <li><a class="site-name" href="{% url 'homepage' %}">INICIO</a></li>
+                        <li><a class="site-name" href="{% url 'criptomonedas' %}"> CRIPTOMONEDAS</a></li>
+                        <li><a class="site-name" href="{% url 'noticias' %}">NOTICIAS </a></li>
+                        <li><a class="site-name" href="{% url 'cotizaciones' %}">COTIZACIONES </a></li>
+                        {% block registration %}
+                            {% if user.is_authenticated %}
+                                <li>Hi {{ user.username }}<a></a></li>
+                                <li><a class="site-name" href="{% url 'logout' %}"> LOGOUT</a></li>
+                            {% else %}
+                                <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+                                <li><a href="{% url 'login' %}">LOGIN</a></li>
+                            {% endif %}
+                       {% endblock %}
+                </ul>
+            {% endblock %}
+
+		</nav><!-- / nav -->
+   </header>
 </body>
 </html>
