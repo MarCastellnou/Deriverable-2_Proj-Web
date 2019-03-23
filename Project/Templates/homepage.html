@@ -16,7 +16,7 @@
                         <li><a class="site-name" href="{% url 'criptomonedas' %}"> CRIPTOMONEDAS</a></li>
                         <li><a class="site-name" href="{% url 'noticias' %}">NOTICIAS </a></li>
                         <li><a class="site-name" href="{% url 'cotizaciones' %}">COTIZACIONES </a></li>
-                        {% block registration %}
+                         {% block Registro %}
                             {% if user.is_authenticated %}
                                 <li>Hi {{ user.username }}<a></a></li>
                                 <li><a class="site-name" href="{% url 'logout' %}"> LOGOUT</a></li>
