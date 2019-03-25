@@ -1,9 +1,9 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	color: #666;
-	background: #f2f2f2;
+	font-family: Courier New, monospace;
+	color: #030000;
+	background: lightskyblue;
 	font-size: 1em;
 	line-height: 1.5em;
 }
@@ -26,8 +26,8 @@ img {
 }
 
 #main-header {
-	background: #333;
-	color: white;
+	background: #030000;
+	color: rgba(246, 250, 255, 0);
 	height: 80px;
 }
 	#main-header a {
@@ -43,7 +43,7 @@ img {
 	text-decoration: none;
 }
 	#logo-header:hover {
-		color: #0b76a6;
+		color: white;
 	}
 
 	#logo-header .site-name {
@@ -57,7 +57,7 @@ img {
 		display: block;
 		font-weight: 300;
 		font-size: 0.8em;
-		color: #999;
+		color: white;
 	}
 
 
@@ -86,15 +86,15 @@ nav {
 			}
 
 				nav ul li a:hover {
-					background: #0b76a6;
+					background: darkgrey;
 				}
 
 #main-content {
 	background: white;
-	width: 90%;
-	max-width: 800px;
+	width: 100%;
+	max-width: 1200px;
 	margin: 20px auto;
-	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	#box-shadow: 0 0 10px rgb(3, 0, 0);
 }
 
 	#main-content header,
@@ -103,7 +103,7 @@ nav {
 	}
 
 #main-footer {
-	background: #333;
+	background: black;
 	color: white;
 	text-align: center;
 	padding: 20px;
@@ -114,5 +114,5 @@ nav {
 	}
 
 	#main-footer a {
-		color: white;
+		color: green;
 	}
