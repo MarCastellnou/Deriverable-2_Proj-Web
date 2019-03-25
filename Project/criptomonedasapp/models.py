@@ -27,7 +27,7 @@ class Noticia(models.Model):
 
 class Cotizacione(models.Model):
 
-    price = models.IntegerField(max_length=150, default= "", blank=False)
+    price = models.IntegerField(default="", blank=False)
 
     def get_absolute_url(self):
         return reverse('cotizaciones-detail', args=[str(self.id)])

@@ -1,22 +1,26 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HOMEPAGE</title>
+    {% block title %}<title>Homepage</title>{% endblock %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
-    <h1>BIENVENIDO</h1>
 
-       <h1>CriptomonedasApp</h1>
+
+<body>
+
+    <h1>CriptomonedasApp</h1>
    <header id="main-header">
 		<nav>
             {% block sidebar %}
                 <ul>
                     <li><a class="site-name" href="{% url 'homepage' %}">INICIO</a></li>
-                        <li><a class="site-name" href="{% url 'criptomonedas' %}"> CRIPTOMONEDAS</a></li>
-                        <li><a class="site-name" href="{% url 'noticias' %}">NOTICIAS </a></li>
-                        <li><a class="site-name" href="{% url 'cotizaciones' %}">COTIZACIONES </a></li>
-                         {% block Registro %}
+                        <li><a class="site-name" href="{% url 'criptomonedas' %}">CRIPTOMONEDAS</a></li>
+                        <li><a class="site-name" href="{% url 'noticias' %}">NOTICIAS</a></li>
+                        <li><a class="site-name" href="{% url 'cotizaciones' %}">COTIZACIONES</a></li>
+                        {% block registration %}
                             {% if user.is_authenticated %}
                                 <li>Hi {{ user.username }}<a></a></li>
                                 <li><a class="site-name" href="{% url 'logout' %}"> LOGOUT</a></li>
@@ -30,5 +34,26 @@
 
 		</nav><!-- / nav -->
    </header>
+
+   <section id="main-content">
+		<article>
+			<header>
+				{% block header %}<h1>CONTENIDO</h1> {% endblock %}
+			</header>
+
+			<div class="content">
+            {% block content %}
+                <p1>texto aqui</p1>
+            {% endblock %}
+
+			</div>
+
+		</article> <!-- /article -->
+
+   </section> <!-- / #main-content -->
+
+    <footer id="main-footer">
+		<p>&copy; 2019 - CriptomonedasApp</p>
+	</footer> <!-- / #main-footer -->
 </body>
 </html>
