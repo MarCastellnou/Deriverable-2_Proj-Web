@@ -6,4 +6,3 @@ admin.site.register(Criptomoneda)
 
 admin.site.register(Noticia)
 
-admin.site.register(Cotizacione)

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    {% block title %}<title>Homepage</title>{% endblock %}
+    {% block title %}<title>CRIPTOWORLD</title>{% endblock %}
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
 
@@ -20,7 +20,6 @@
                     <li><a class="site-name" href="{% url 'homepage' %}">INICIO</a></li>
                         <li><a class="site-name" href="{% url 'criptomonedas' %}">CRIPTOMONEDAS</a></li>
                         <li><a class="site-name" href="{% url 'noticias' %}">NOTICIAS</a></li>
-                        <li><a class="site-name" href="{% url 'cotizaciones' %}">COTIZACIONES</a></li>
                         {% block registration %}
                             {% if user.is_authenticated %}
                                 <li>Hi {{ user.username }}<a></a></li>
