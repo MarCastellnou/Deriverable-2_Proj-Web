@@ -2,3 +2,19 @@
 
 {% block title %}<title>CRIPTOWORLD</title>{% endblock %}
 {% block header %}<h1>NOTICIAS</h1> {% endblock %}
+
+<section id="main-content">
+		<article>
+			<    class="content">
+            {% block content %}
+                {% for i in noticia %}
+                    <p><b>Titular:</b>{{ i.titular }}</p>
+                    <p>{{ i.cuerpo }}</p>
+                {% endfor %}
+            {% endblock %}
+
+			</div>
+
+		</article> <!-- /article -->
+
+   </section> <!-- / #main-content -->

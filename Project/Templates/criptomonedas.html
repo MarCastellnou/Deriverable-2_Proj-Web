@@ -2,3 +2,23 @@
 
 {% block title %}<title>CRIPTOWORLD</title>{% endblock %}
 {% block header %}<h1>TOP 100 CRIPTOMONEDAS</h1> {% endblock %}
+
+<section id="main-content">
+		<article>
+			<    class="content">
+            {% block content %}
+                {% for i in moneda %}
+                    <p><b>Nombre:</b>  <b>Market cap:</b>  <b>Precio:</b>  <b>Volumen 24h:</b>  <b>Cambio 24h:</b></p>
+                      <p>{{ i.name }}
+                          {{ i.market_cap }}
+                          {{ i.price }}
+                          {{ i.volume_24h }}
+                          {{ i.change_24h }}</p>
+                {% endfor %}
+            {% endblock %}
+
+			</div>
+
+		</article> <!-- /article -->
+
+   </section> <!-- / #main-content -->

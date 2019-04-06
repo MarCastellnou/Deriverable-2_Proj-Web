@@ -7,12 +7,14 @@ from urllib.request import urlopen
 
 # Create your views here.
 def homepage(request):
+
     return render(request, 'homepage.html')
 
 def criptomonedas(request):
-
-    return render(request, 'criptomonedas.html')
+    monedas = Criptomoneda.objects.all()
+    return render(request, 'criptomonedas.html', context={'moneda':monedas})
 
 def noticias(request):
-    return render(request, 'noticias.html')
+    noticia = Noticia.objects.all()
+    return render(request, 'noticias.html', context={'noticia':noticia})
 
