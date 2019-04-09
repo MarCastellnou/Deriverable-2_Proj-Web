@@ -5,7 +5,6 @@ from django.urls import reverse
 
 # Create your models here.
 class Criptomoneda(models.Model):
-
     name = models.CharField(max_length=32, default="")
     market_cap = models.IntegerField(default="")
     price = models.IntegerField(default="")

@@ -7,14 +7,24 @@
 		<article>
 			<    class="content">
             {% block content %}
-                {% for i in moneda %}
-                    <p><b>Nombre:</b>  <b>Market cap:</b>  <b>Precio:</b>  <b>Volumen 24h:</b>  <b>Cambio 24h:</b></p>
-                      <p>{{ i.name }}
-                          {{ i.market_cap }}
-                          {{ i.price }}
-                          {{ i.volume_24h }}
-                          {{ i.change_24h }}</p>
-                {% endfor %}
+                    <table style="width:100%">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Market cap</th>
+                            <th>Precio</th>
+                            <th>Volumen 24h</th>
+                            <th>Cambio 24h</th>
+                        </tr>
+                        {% for i in moneda %}
+                            <tr align="center">
+                                <td>{{ i.name }}</td>
+                                <td>{{ i.market_cap }}</td>
+                                <td>{{ i.price }}</td>
+                                <td>{{ i.volume_24h }}</td>
+                                <td>{{ i.change_24h }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
             {% endblock %}
 
 			</div>
