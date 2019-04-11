@@ -15,4 +15,4 @@ Marc Castellnou
 Saber Tiguer
 
 How to use our web:
-In our application we find 2 sections often the most important moneados and their quotes and on the other hand we find the most relevant news in the world of cryptocurrencies.
+In our application we find 2 sections often the most important coins and their quotes and on the other hand we find the most relevant news in the world of cryptocurrencies.
