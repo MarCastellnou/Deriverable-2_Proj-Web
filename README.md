@@ -8,5 +8,11 @@ Obtaining data: through the api of coinmarketcap.com and the news through the re
 
 The API will use the KEY of coinmarketcap.com that allows us to obtain 5 pairs of currencies free of charge and to make 10k consultation calls per month.
 
+People who make this project.
+Xavi Berga
+Jose Almunia
+Marc Castellnou 
+Saber Tiguer
+
 How to use our web:
 In our application we find 2 sections often the most important moneados and their quotes and on the other hand we find the most relevant news in the world of cryptocurrencies.
