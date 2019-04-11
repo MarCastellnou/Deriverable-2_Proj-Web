@@ -1,12 +1,9 @@
-TEMA: Criptomonedas
+TOPIC: Cryptocurrencies
 
-Entidades: Noticias - Cotizaciones
+Entities: News - Quotes
 
-Esto nos permitirá saber tanto las ultimas noticias relacionadas como el precio de los diferentes
-pares de divisas así como los posibles cambios en un futuro u oportunidades de compra
+This will allow us to know both the latest related news such as the price of different currency pairs as well as possible future changes or purchase opportunities.
 
-Obtención de datos: mediante la api de coinmarketcap.com y las noticias mediante la web de
-investiga o similar
+Obtaining data: through the api of coinmarketcap.com and the news through the research website or similar
 
-La API usaremos la KEY de coinmarketcap.com que nos permite de manera gratuita obtener 5 pares
-de divisas y realizar 10k llamadas de consulta al mes.
+The API will use the KEY of coinmarketcap.com that allows us to obtain 5 pairs of currencies free of charge and to make 10k consultation calls per month.
