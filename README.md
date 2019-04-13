@@ -1,6 +1,6 @@
 __TOPIC: Cryptocurrencies__
 
-Entities: News - Quotes
+__Entities: News - Quotation__
 
 This will allow us to know both the latest related news such as the price of different currency pairs as well as possible future changes or purchase opportunities.
 
