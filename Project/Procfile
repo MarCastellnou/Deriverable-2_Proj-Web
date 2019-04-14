@@ -1,1 +1,1 @@
-web: gunicorn criptomonedasapp.wsgi
+web: gunicorn Project.wsgi --log-file -
