@@ -102,7 +102,3 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-
-#Pycharm
-.idea/
-Project/.idea/
