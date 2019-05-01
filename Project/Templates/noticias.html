@@ -4,15 +4,20 @@
 {% block header %}<h1>NOTICIAS</h1> {% endblock %}
 
 <section id="main-content">
+        {% if role_class.role == 'cliente' or role_class.role == 'admin' %}
+
+
 		<article>
 			<    class="content">
             {% block content %}
+                 <a href="{% url 'add_noticia'%}">Añadir noticia</a>
                 {% for i in noticia %}
-                    <p><b>Titular:</b>{{ i.titular }}</p>
+                    <p><b>Titular:</b>{{ i.titular }}  <a href="{% url 'update_noticia' i.pk %}">Modificar Noticia</a>
+                        <a href="{% url 'delete_noticia' i.pk %}">Eliminar Noticia</a></p>
                     <p>{{ i.cuerpo }}</p><br>
                 {% endfor %}
             {% endblock %}
-
+            {% endif %}
 			</div>
 
 		</article> <!-- /article -->

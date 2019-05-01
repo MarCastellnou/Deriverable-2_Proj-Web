@@ -12,7 +12,7 @@ class Criptomoneda(models.Model):
     change_24h = models.IntegerField(default="")
 
     def get_absolute_url(self):
-        return reverse('criptomonedas-detail', args=[str(self.name)])
+        return reverse('criptomonedas-detail', args=[str(self.id)])
 
     def __str__(self):
         return '%s'%(self.name)
@@ -29,4 +29,12 @@ class Noticia(models.Model):
     def __str__(self):
         return '%s'%(self.titular)
 
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, related_name="profile",on_delete=models.SET_DEFAULT,default=0)
+    ROLE_STATUS =(('admin','admin'),('cliente','cliente'))
+    role = models.CharField(max_length=32, choices=ROLE_STATUS, blank=False, default='cliente')
+
+    def __str__(self):
+        return 'User: %s Role: %s' % (self.user,self.role)
 

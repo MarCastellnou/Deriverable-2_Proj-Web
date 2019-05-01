@@ -1,0 +1,11 @@
+{% extends 'homepage.html' %}
+{% block title %}<title>Eliminar Noticia</title>{% endblock %}
+
+{% block content %}
+    <h4>Estas seguro de eliminar la noticia: '{{ noticia }}'</h4>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Elimina noticia</button>
+  </form>
+{% endblock %}
