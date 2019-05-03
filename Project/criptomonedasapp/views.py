@@ -3,7 +3,7 @@ from django.core.exceptions import PermissionDenied
 from django.db.models import QuerySet
 from django.shortcuts import render, redirect
 from django.utils.decorators import method_decorator
-from django.views.generic import UpdateView, CreateView, DeleteView, ListView
+from django.views.generic import UpdateView, CreateView, DeleteView, ListView, DetailView
 
 from .forms import CriptoForm, NoticiaForm
 from .models import *
@@ -26,23 +26,13 @@ def homepage(request):
 
 def criptomonedas(request):
     monedas = Criptomoneda.objects.all()
-    logged_user = request.user
-    role_class = UserProfile.objects.filter(user=logged_user)
+    return render(request, 'criptomonedas.html', context={'moneda':monedas})
 
-    if role_class.get().role == 'cliente' or role_class.get().role == 'admin':
-        return render(request, 'criptomonedas.html', context={'role_class':role_class.get(),'moneda':monedas})
-    else:
-        return redirect('/')
 
 def noticias(request):
     noticia = Noticia.objects.all()
-    logged_user = request.user
-    role_class = UserProfile.objects.filter(user=logged_user)
-
-    if role_class.get().role == 'cliente' or role_class.get().role == 'admin':
-        return render(request, 'noticias.html', context={'role_class':role_class.get(),'noticia':noticia})
-    else:
-        return redirect('/')
+    user = request.user
+    return render(request, 'noticias.html', context={'noticia':noticia})
 
 
 class viewMonedaFav(ListView):

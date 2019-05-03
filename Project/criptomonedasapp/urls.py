@@ -14,5 +14,4 @@ urlpatterns=[
     path('noticia/update_noticia/<int:pk>', views.updateNoticia.as_view(), name='update_noticia'),
     path('noticia/delete_noticia/<int:pk>', views.deleteNoticia.as_view(), name='delete_noticia'),
     path('moneda_favorita/', views.viewMonedaFav.as_view(), name='monedas_favoritas'),
-
 ]

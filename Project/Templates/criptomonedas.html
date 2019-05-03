@@ -5,10 +5,8 @@
 
 <section id="main-content">
 		<article>
-        {% if role_class.role == 'cliente' or role_class.role == 'admin' %}
 			< class="content">
             {% block content %}
-                <a href="{% url 'add_moneda'%}">Añadir moneda</a>
                     <table style="width:100%">
                         <tr align="center">
                             <th>Nombre</th>
@@ -24,14 +22,12 @@
                                 <td>{{ i.price }}</td>
                                 <td>{{ i.volume_24h }}</td>
                                 <td>{{ i.change_24h }} </td>
-                            <td align="left"><a href="{% url 'delete_moneda' i.pk%}">Eliminar moneda</a></td>
                             </tr>
                         {% endfor %}
                     </table>
                   <br>
                 <br>
             {% endblock %}
-            {% endif %}
 			</div>
 
 		</article> <!-- /article -->
