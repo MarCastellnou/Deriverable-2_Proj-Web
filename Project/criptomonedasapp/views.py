@@ -1,25 +1,9 @@
-from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
-from django.db.models import QuerySet
-from django.shortcuts import render, redirect
-from django.utils.decorators import method_decorator
-from django.views.generic import UpdateView, CreateView, DeleteView, ListView, DetailView
-
-from .forms import CriptoForm, NoticiaForm
+from django.shortcuts import render
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import UpdateView, CreateView, DeleteView
+from .forms import NoticiaForm
 from .models import *
-
-# Create your views here.
-class LoginRequiredMixin(object):
-    @method_decorator(login_required())
-    def dispatch(self, *args, **kwargs):
-        return super(LoginRequiredMixin, self).dispatch(*args, **kwargs)
-
-class CheckIsOwnerMixin(object):
-    def get_object(self, *args, **kwargs):
-        obj = super(CheckIsOwnerMixin, self).get_object(*args, **kwargs)
-        if not obj.user == self.request.user:
-            raise PermissionDenied
-        return obj
 
 def homepage(request):
     return render(request, 'homepage.html')
@@ -34,26 +18,7 @@ def noticias(request):
     user = request.user
     return render(request, 'noticias.html', context={'noticia':noticia})
 
-
-class viewMonedaFav(ListView):
-    template_name = 'moneda_fav.html'
-    model = Criptomoneda
-    succes_url = 'criptomonedas/'
-
-
-
-class addCriptomoneda(CreateView):
-    form_class = CriptoForm
-    model = Criptomoneda
-    success_url = '/criptomonedas'
-    template_name = 'add/addCriptomoneda.html'
-
-    def form_valid(self, form):
-        form.instance.user = self.request.user
-        return super(addCriptomoneda, self).form_valid(form)
-
-
-class addNoticia(CreateView):
+class addNoticia(LoginRequiredMixin,CreateView):
     form_class = NoticiaForm
     model = Noticia
     success_url = '/noticias'
@@ -63,18 +28,37 @@ class addNoticia(CreateView):
         form.instance.user = self.request.user
         return super(addNoticia, self).form_valid(form)
 
-class updateNoticia(UpdateView):
+    def dispatch(self, request, *args, **kwargs):
+        """Solo puede acceder a la creacion de una tarea los usuarios registrados"""
+        user = self.request.user
+        if user.is_authenticated:
+            return super(addNoticia, self).dispatch(request, *args, **kwargs)
+        else:
+            raise PermissionDenied
+
+class updateNoticia(LoginRequiredMixin,UpdateView):
     model = Noticia
     form_class = NoticiaForm
     success_url = '/noticias'
     template_name = 'update/updateNoticia.html'
 
-class deleteCriptomoneda(DeleteView):
-    model = Criptomoneda
-    success_url = '/criptomonedas'
-    template_name = 'delete/deleteCriptomoneda.html'
+    def dispatch(self, request, *args, **kwargs):
+        """Solo puede acceder a la creacion de una tarea los usuarios registrados"""
+        user = self.request.user
+        if user.is_authenticated:
+            return super(updateNoticia, self).dispatch(request, *args, **kwargs)
+        else:
+            raise PermissionDenied
 
-class deleteNoticia(DeleteView):
+class deleteNoticia(LoginRequiredMixin,DeleteView):
     model = Noticia
     success_url = '/noticias'
     template_name = 'delete/deleteNoticia.html'
+
+    def dispatch(self, request, *args, **kwargs):
+        """Solo puede acceder a la creacion de una tarea los usuarios registrados"""
+        user = self.request.user
+        if user.is_authenticated:
+            return super(deleteNoticia, self).dispatch(request, *args, **kwargs)
+        else:
+            raise PermissionDenied

@@ -29,12 +29,3 @@ class Noticia(models.Model):
     def __str__(self):
         return '%s'%(self.titular)
 
-
-class UserProfile(models.Model):
-    user = models.OneToOneField(User, related_name="profile",on_delete=models.SET_DEFAULT,default=0)
-    ROLE_STATUS =(('admin','admin'),('cliente','cliente'))
-    role = models.CharField(max_length=32, choices=ROLE_STATUS, blank=False, default='cliente')
-
-    def __str__(self):
-        return 'User: %s Role: %s' % (self.user,self.role)
-

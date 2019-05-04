@@ -1,13 +1,8 @@
 from django.forms import ModelForm
-from .models import Noticia, Criptomoneda
+from .models import Noticia
 
 
 class NoticiaForm(ModelForm):
     class Meta:
         model = Noticia
-        exclude=()
-
-class CriptoForm(ModelForm):
-    class Meta:
-        model = Criptomoneda
         exclude=()
