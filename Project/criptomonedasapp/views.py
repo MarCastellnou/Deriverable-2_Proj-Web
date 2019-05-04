@@ -16,7 +16,7 @@ def criptomonedas(request):
 def noticias(request):
     noticia = Noticia.objects.all()
     user = request.user
-    return render(request, 'noticias.html', context={'noticia':noticia})
+    return render(request, 'noticias.html', context={'noticia':noticia,'user':user})
 
 class addNoticia(LoginRequiredMixin,CreateView):
     form_class = NoticiaForm

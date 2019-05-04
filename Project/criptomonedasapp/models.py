@@ -22,6 +22,7 @@ class Noticia(models.Model):
 
     titular = models.CharField(max_length=32, default="", blank=False)
     cuerpo = models.CharField(max_length=256, default="", blank=False)
+    user = models.CharField(max_length=32, blank=False)
 
     def get_absolute_url(self):
         return reverse('noticias-detail', args=[str(self.id)])
