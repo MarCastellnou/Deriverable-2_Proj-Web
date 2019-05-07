@@ -4,13 +4,16 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import UpdateView, CreateView, DeleteView
 from .forms import NoticiaForm
 from .models import *
+import json
+import requests
 
 def homepage(request):
     return render(request, 'homepage.html')
 
 def criptomonedas(request):
-    monedas = Criptomoneda.objects.all()
-    return render(request, 'criptomonedas.html', context={'moneda':monedas})
+    r = requests.get('https://api.coinmarketcap.com/v1/ticker/?convert={}&limit={}'.format('USD','25    '))
+    coin_list = r.json()
+    return render(request, 'criptomonedas.html', context={'moneda':coin_list})
 
 
 def noticias(request):
@@ -62,3 +65,4 @@ class deleteNoticia(LoginRequiredMixin,DeleteView):
             return super(deleteNoticia, self).dispatch(request, *args, **kwargs)
         else:
             raise PermissionDenied
+

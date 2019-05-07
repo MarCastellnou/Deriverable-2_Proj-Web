@@ -18,10 +18,10 @@
                         {% for i in moneda %}
                             <tr align="center">
                                 <td>{{ i.name }}</td>
-                                <td>{{ i.market_cap }}</td>
-                                <td>{{ i.price }}</td>
-                                <td>{{ i.volume_24h }}</td>
-                                <td>{{ i.change_24h }} </td>
+                                <td>{{ i.market_cap_usd }}</td>
+                                <td>{{ i.price_usd }}</td>
+                                <td>{{ i.24h_volume_usd }}</td>
+                                <td>{{ i.percent_change_24h }} </td>
                             </tr>
                         {% endfor %}
                     </table>
