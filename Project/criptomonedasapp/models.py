@@ -30,3 +30,8 @@ class Noticia(models.Model):
     def __str__(self):
         return '%s'%(self.titular)
 
+    def cuerpoNot(self):
+        return '%s'%(self.cuerpo)
+
+    def userNot(self):
+        return '%s'%(self.user)
