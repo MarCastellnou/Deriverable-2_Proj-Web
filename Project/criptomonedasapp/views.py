@@ -32,7 +32,6 @@ class addNoticia(LoginRequiredMixin,CreateView):
         return super(addNoticia, self).form_valid(form)
 
     def dispatch(self, request, *args, **kwargs):
-        """Solo puede acceder a la creacion de una tarea los usuarios registrados"""
         user = self.request.user
         if user.is_authenticated:
             return super(addNoticia, self).dispatch(request, *args, **kwargs)
@@ -46,7 +45,6 @@ class updateNoticia(LoginRequiredMixin,UpdateView):
     template_name = 'update/updateNoticia.html'
 
     def dispatch(self, request, *args, **kwargs):
-        """Solo puede acceder a la creacion de una tarea los usuarios registrados"""
         user = self.request.user
         if user.is_authenticated:
             return super(updateNoticia, self).dispatch(request, *args, **kwargs)
@@ -59,7 +57,6 @@ class deleteNoticia(LoginRequiredMixin,DeleteView):
     template_name = 'delete/deleteNoticia.html'
 
     def dispatch(self, request, *args, **kwargs):
-        """Solo puede acceder a la creacion de una tarea los usuarios registrados"""
         user = self.request.user
         if user.is_authenticated:
             return super(deleteNoticia, self).dispatch(request, *args, **kwargs)
