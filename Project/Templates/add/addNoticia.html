@@ -1,0 +1,11 @@
+{% extends 'homepage.html' %}
+{% block title %}<title>CREAR NOTICIA</title>{% endblock %}
+
+{% block content %}
+    <h2>CREA UNA NOTICIA</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Crear Noticia</button>
+  </form>
+{% endblock %}

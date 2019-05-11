@@ -2,19 +2,32 @@
 
 {% block title %}<title>CRIPTOWORLD</title>{% endblock %}
 {% block header %}<h1>NOTICIAS</h1> {% endblock %}
+</head>
+<body>
 
-<section id="main-content">
-		<article>
-			<    class="content">
+    <div>
+        <div>
             {% block content %}
+                {% block register %}
+                     {% if user.is_authenticated %}
+                 <a style="margin-left: 20px" href="{% url 'add_noticia'%}">Añadir noticia</a>
                 {% for i in noticia %}
-                    <p><b>Titular:</b>{{ i.titular }}</p>
-                    <p>{{ i.cuerpo }}</p><br>
+                    <p><b style="margin-left: 20px">{{ i.titular }}</b>   por {{ i.user }}  <a style="margin-left: 15px"
+                                                                                      href="{% url 'update_noticia' i.pk %}">Modificar Noticia</a>
+                        <h7>|</h7> <a href="{% url 'delete_noticia' i.pk %}">Eliminar Noticia</a></p>
+                    <p style="margin-left: 30px">{{ i.cuerpo }}
+                    </p>
                 {% endfor %}
+
+                         {% else %}
+                {% for i in noticia %}
+                     <p><b style="margin-left: 20px">{{ i.titular }}</b>   por {{ i.user }}
+                    <p style="margin-left: 30px">{{ i.cuerpo }}</p><br>
+                {% endfor %}
+                    {% endif %}
+                {% endblock %}
             {% endblock %}
+         </div>
+    </div>
 
-			</div>
-
-		</article> <!-- /article -->
-
-   </section> <!-- / #main-content -->
+</body>
