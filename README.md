@@ -15,9 +15,8 @@ __People who make this project.__
 * Saber Tiguer
 
 __Requirements__
-To run this application you need to have installed python.
+To run this application you need to have installed file Requirements.txt.
 You can do it by doing this in the terminal 
-* `$ sudo apt-get install python3`
 
 __How to use our web:__
 In our web we find 2 sections often the most important coins and their quotes and on the other hand we find the most relevant news in the world of cryptocurrencies.
