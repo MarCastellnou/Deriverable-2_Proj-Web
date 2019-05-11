@@ -2,18 +2,25 @@
 
 {% block title %}<title>CRIPTOWORLD</title>{% endblock %}
 {% block header %}<h1>TOP 100 CRIPTOMONEDAS</h1> {% endblock %}
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
 <section id="main-content">
 		<article>
 			< class="content">
             {% block content %}
-                    <table style="width:100%">
-                        <tr align="center">
-                            <th>Nombre</th>
-                            <th>Market cap</th>
-                            <th>Precio</th>
-                            <th>Volumen 24h</th>
-                            <th>Cambio 24h</th>
+                    <table style="width:100%" class="table table-striped">
+                        <tr align="center" >
+                            <th><h5>Nombre</h5></th>
+                            <th><h5>Market cap</h5></th>
+                            <th><h5>Precio</h5></th>
+                            <th><h5>Volumen 24h</h5></th>
+                            <th><h5>Cambio 24h</h5></th>
                         </tr>
                         {% for i in moneda %}
                             <tr align="center">
@@ -33,3 +40,4 @@
 		</article> <!-- /article -->
 
    </section> <!-- / #main-content -->
+</body>

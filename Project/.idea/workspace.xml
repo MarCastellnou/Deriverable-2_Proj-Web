@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="376bc8f8-6308-46e2-96e2-82951cc32a06" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/criptomonedas.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/criptomonedas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/criptomonedasapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/criptomonedasapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/criptomonedasapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/criptomonedasapp/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/criptomonedasapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/criptomonedasapp/views.py" afterDir="false" />
+=======
+    <list default="true" id="fe67708f-d118-45c5-98e4-70fdbb29849b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/criptomonedasapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/criptomonedasapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,10 +70,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/criptomonedasapp/models.py">
+=======
+        <entry file="file://$PROJECT_DIR$/Templates/homepage.html">
+>>>>>>> Stashed changes
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="335">
               <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -95,8 +117,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/noticias.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="187">
               <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+=======
+            <state relative-caret-position="510">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -120,16 +147,37 @@
       <list>
         <option value="$PROJECT_DIR$/criptomonedasapp/models.py" />
         <option value="$PROJECT_DIR$/Templates/noticias.html" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/Templates/criptomonedas.html" />
         <option value="$PROJECT_DIR$/criptomonedasapp/views.py" />
         <option value="$PROJECT_DIR$/criptomonedasapp/tests.py" />
+=======
+        <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/Project/wsgi.py" />
+        <option value="$PROJECT_DIR$/criptomonedasapp/static/css/estilo.css" />
+        <option value="$PROJECT_DIR$/criptomonedasapp/static/heroku_app/css/estilo.css" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/Pipfile" />
+        <option value="$PROJECT_DIR$/Project/settings.py" />
+        <option value="$PROJECT_DIR$/Templates/criptomonedas.html" />
+        <option value="$PROJECT_DIR$/Templates/homepage.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< Updated upstream
     <option name="x" value="635" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
+=======
+    <option name="x" value="675" />
+    <option name="width" value="698" />
+    <option name="height" value="735" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -152,6 +200,33 @@
             <path>
               <item name="Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
+=======
+              <item name="criptomonedasapp" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="criptomonedasapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="criptomonedasapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="heroku_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
               <item name="Templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -286,7 +361,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="Project.settings" />
       </envs>
+<<<<<<< Updated upstream
       <option name="SDK_HOME" value="" />
+=======
+      <option name="SDK_HOME" value="C:\Users\marcc\OneDrive\Escritorio\3º de carrera v2\env\Scripts\python.exe" />
+>>>>>>> Stashed changes
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -321,6 +400,7 @@
       <created>1557393182496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< Updated upstream
       <updated>1557393182496</updated>
       <workItem from="1557393203807" duration="1879000" />
       <workItem from="1557418019979" duration="2164000" />
@@ -360,12 +440,50 @@
     <history-entry file="Test__criptomonedasapp_tests_NoticiasTestCase - 2019.05.10 at 11h 10m 06s.xml">
       <configuration name="Test: criptomonedasapp.tests.NoticiasTestCase" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
+=======
+      <updated>1553192180202</updated>
+      <workItem from="1553192181930" duration="4247000" />
+      <workItem from="1553267732933" duration="7638000" />
+      <workItem from="1553332188032" duration="2073000" />
+      <workItem from="1553350117950" duration="3437000" />
+      <workItem from="1553353640706" duration="128000" />
+      <workItem from="1553497504354" duration="2967000" />
+      <workItem from="1553525701945" duration="1994000" />
+      <workItem from="1553527815007" duration="1506000" />
+      <workItem from="1553595093100" duration="5915000" />
+      <workItem from="1553692057865" duration="137000" />
+      <workItem from="1554541522172" duration="2980000" />
+      <workItem from="1554791369764" duration="1152000" />
+      <workItem from="1554794090134" duration="43000" />
+      <workItem from="1554801158430" duration="4331000" />
+      <workItem from="1554805819399" duration="1195000" />
+      <workItem from="1554818667042" duration="199000" />
+      <workItem from="1554819892433" duration="58000" />
+      <workItem from="1554887939818" duration="1306000" />
+      <workItem from="1555001540456" duration="206000" />
+      <workItem from="1555015154719" duration="320000" />
+      <workItem from="1555151400149" duration="1718000" />
+      <workItem from="1555153382745" duration="1513000" />
+      <workItem from="1555162723617" duration="756000" />
+      <workItem from="1555250033195" duration="1439000" />
+      <workItem from="1555252032598" duration="488000" />
+      <workItem from="1555252527125" duration="370000" />
+      <workItem from="1555254144937" duration="196000" />
+      <workItem from="1555272152502" duration="390000" />
+      <workItem from="1557565383681" duration="305000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="49007000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="8693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+<<<<<<< Updated upstream
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16510066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -383,6 +501,27 @@
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
+=======
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16375838" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30736545" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3201133" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32890365" />
+      <window_info anchor="bottom" id="manage.py@Project" order="13" weight="0.7053824" />
+>>>>>>> Stashed changes
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -435,7 +574,61 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/criptomonedasapp/views.py">
+=======
+    <entry file="file://$PROJECT_DIR$/criptomonedasapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/criptomonedasapp/static/css/estilo.css" />
+    <entry file="file://$PROJECT_DIR$/runtime.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/criptomonedasapp/static/heroku_app/css/estilo.css" />
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/wsgi.py">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12">
           <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
@@ -462,5 +655,36 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/Templates/criptomonedas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/noticias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
   </component>
 </project>
