@@ -28,6 +28,9 @@ In addition to all this, small unit tests have been carried out to verify that t
 
 Finally, the [coinmarketcap.com](https://coinmarketcap.com/) API has been added, and in this way we can see the crypto-currencies. A filter has been applied, which only shows the first 25 coins, because if the first 100 were shown, the page took a long time to load.
 
+__FAQ__
+-------------------
+Working it.
 
 __Credits__
 -------------------
