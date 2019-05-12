@@ -10,13 +10,6 @@ Obtaining data: through the api of coinmarketcap.com and the news through the re
 
 The API will use the KEY of [coinmarketcap.com](https://coinmarketcap.com/) that allows us to obtain 5 pairs of currencies free of charge and to make 10k consultation calls per month.
 
-__Credits__
--------------------
-* [Xavi Berga](https://github.com/xaps97)
-* [Jose Almunia](https://github.com/jokerarm96)
-* [Marc Castellnou](https://github.com/MarCastellnou) 
-* [Saber Tiguer](https://github.com/stiguer)
-
 __Requirements__
 -------------------
 To run this application you need to have installed file Requirements.txt.
@@ -34,3 +27,12 @@ In this second deliverable, the option has been implemented that allows register
 In addition to all this, small unit tests have been carried out to verify that the attributes of the database of each news item correspond to those expected.
 
 Finally, the [coinmarketcap.com](https://coinmarketcap.com/) API has been added, and in this way we can see the crypto-currencies. A filter has been applied, which only shows the first 25 coins, because if the first 100 were shown, the page took a long time to load.
+
+
+__Credits__
+-------------------
+* [Xavi Berga](https://github.com/xaps97)
+* [Jose Almunia](https://github.com/jokerarm96)
+* [Marc Castellnou](https://github.com/MarCastellnou) 
+* [Saber Tiguer](https://github.com/stiguer)
+
