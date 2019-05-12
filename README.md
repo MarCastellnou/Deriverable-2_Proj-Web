@@ -2,6 +2,7 @@ __TOPIC: Cryptocurrencies__
 ==============================================
 
 __Entities: News - Quotation__
+-------------------
 
 This will allow us to know both the latest related news such as the price of different currency pairs as well as possible future changes or purchase opportunities.
 
@@ -10,6 +11,7 @@ Obtaining data: through the api of coinmarketcap.com and the news through the re
 The API will use the KEY of [coinmarketcap.com](https://coinmarketcap.com/) that allows us to obtain 5 pairs of currencies free of charge and to make 10k consultation calls per month.
 
 __People who make this project.__
+-------------------
 * [Xavi Berga](https://github.com/xaps97)
 * [Jose Almunia](https://github.com/jokerarm96)
 * [Marc Castellnou](https://github.com/MarCastellnou) 
