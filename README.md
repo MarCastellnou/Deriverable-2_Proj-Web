@@ -1,4 +1,5 @@
 __TOPIC: Cryptocurrencies__
+==============================================
 
 __Entities: News - Quotation__
 
