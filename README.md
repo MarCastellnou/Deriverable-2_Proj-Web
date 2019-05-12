@@ -22,6 +22,7 @@ __How to use our web:__
 In our web we find 2 sections often the most important coins and their quotes and on the other hand we find the most relevant news in the world of cryptocurrencies.
 
 __Deliverable 2.0:__
+
 In this second deliverable, the option has been implemented that allows registered users to add news, modify it and eliminate it. For now, all users can modify and delete all news without restriction. The best option would be that each one can only modify and eliminate the news that were created by him, but this option has not been implemented yet.
 
 In addition to all this, small unit tests have been carried out to verify that the attributes of the database of each news item correspond to those expected.
