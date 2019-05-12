@@ -20,11 +20,11 @@ __Requirements__
 To run this application you need to have installed file Requirements.txt.
 You can do it by doing this in the terminal 
 
-__How to use our web:__
+__How to use__
 -------------------
 In our web we find 2 sections often the most important coins and their quotes and on the other hand we find the most relevant news in the world of cryptocurrencies.
 
-__Deliverable 2.0:__
+__Deliverable 2.0__
 -------------------
 
 In this second deliverable, the option has been implemented that allows registered users to add news, modify it and eliminate it. For now, all users can modify and delete all news without restriction. The best option would be that each one can only modify and eliminate the news that were created by him, but this option has not been implemented yet.
