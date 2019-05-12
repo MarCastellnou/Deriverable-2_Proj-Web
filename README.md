@@ -9,10 +9,10 @@ Obtaining data: through the api of coinmarketcap.com and the news through the re
 The API will use the KEY of [coinmarketcap.com](https://coinmarketcap.com/) that allows us to obtain 5 pairs of currencies free of charge and to make 10k consultation calls per month.
 
 __People who make this project.__
-* Xavi Berga
-* Jose Almunia
-* Marc Castellnou 
-* Saber Tiguer
+* [Xavi Berga](https://github.com/xaps97)
+* [Jose Almunia](https://github.com/jokerarm96)
+* [Marc Castellnou](https://github.com/MarCastellnou) 
+* [Saber Tiguer](https://github.com/stiguer)
 
 __Requirements__
 To run this application you need to have installed file Requirements.txt.
@@ -21,7 +21,7 @@ You can do it by doing this in the terminal
 __How to use our web:__
 In our web we find 2 sections often the most important coins and their quotes and on the other hand we find the most relevant news in the world of cryptocurrencies.
 
-_Deliverable 2:_
+__Deliverable 2:__
 In this second deliverable, the option has been implemented that allows registered users to add news, modify it and eliminate it. For now, all users can modify and delete all news without restriction. The best option would be that each one can only modify and eliminate the news that were created by him, but this option has not been implemented yet.
 
 In addition to all this, small unit tests have been carried out to verify that the attributes of the database of each news item correspond to those expected.
