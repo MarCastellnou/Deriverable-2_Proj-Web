@@ -12,7 +12,7 @@
 <body>
 <section id="main-content">
 		<article>
-			< class="content">
+
             {% block content %}
                     <table style="width:100%" class="table table-striped">
                         <tr align="center" >
@@ -24,11 +24,13 @@
                         </tr>
                         {% for i in moneda %}
                             <tr align="center">
-                                <td>{{ i.name }}</td>
-                                <td>${{ i.market_cap_usd }}</td>
-                                <td>${{ i.price_usd }}</td>
-                                <td>${{ i.24h_volume_usd }}</td>
-                                <td>{{ i.percent_change_24h }}% </td>
+                            <span vocab="http://schema.org/" typeof="DatedMoneySpecification">
+                                <span property="currency"><td>{{ i.name }}</td></span>
+                                <span property=""><td>${{ i.market_cap_usd }}</td></span>
+                                <span property="amount"><td>${{ i.price_usd }}</td></span>
+                                <span property=""><td>${{ i.24h_volume_usd }}</td></span>
+                                <span property=""><td>{{ i.percent_change_24h }}% </td></span>
+                                 </span>
                             </tr>
                         {% endfor %}
                     </table>

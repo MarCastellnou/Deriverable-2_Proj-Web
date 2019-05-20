@@ -2,6 +2,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
+import datetime
 
 # Create your models here.
 class Criptomoneda(models.Model):
@@ -23,6 +24,7 @@ class Noticia(models.Model):
     titular = models.CharField(max_length=32, default="", blank=False)
     cuerpo = models.CharField(max_length=256, default="", blank=False)
     user = models.CharField(max_length=32, blank=False)
+    date = models.DateField(_("Date"), default=datetime.date.today)
 
     def get_absolute_url(self):
         return reverse('noticias-detail', args=[str(self.id)])

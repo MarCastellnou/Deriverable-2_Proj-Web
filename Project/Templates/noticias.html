@@ -10,14 +10,15 @@
             {% block content %}
                 {% block register %}
                      {% if user.is_authenticated %}
+                 <span vocab="http://schema.org/" typeof="NewsArticle">
                  <a style="margin-left: 20px" href="{% url 'add_noticia'%}">Añadir noticia</a>
                 {% for i in noticia %}
-                    <p><b style="margin-left: 20px">{{ i.titular }}</b>   por {{ i.user }}  <a style="margin-left: 15px" href="{% url 'detail_noticia' i.pk %}">Ver noticia</a> <h7>|</h7>
+                    <span property="headline"><p><b style="margin-left: 20px">{{ i.titular }}</b></span><span property="author">   por {{ i.user }}</span>  <a style="margin-left: 15px" href="{% url 'detail_noticia' i.pk %}">Ver noticia</a> <h7>|</h7>
                                                                                      <a href="{% url 'update_noticia' i.pk %}"> Modificar Noticia</a>
                         <h7>|</h7> <a href="{% url 'delete_noticia' i.pk %}">Eliminar Noticia</a></p>
                     </p>
                 {% endfor %}
-
+                 </span>
                          {% else %}
                 {% for i in noticia %}
                      <p><b style="margin-left: 20px">{{ i.titular }}</b>   por {{ i.user }}  <a style="margin-left: 15px" href="{% url 'detail_noticia' i.pk %}">Ver noticia</a>
