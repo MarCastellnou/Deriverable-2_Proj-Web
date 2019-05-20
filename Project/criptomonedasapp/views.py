@@ -1,7 +1,7 @@
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import UpdateView, CreateView, DeleteView
+from django.views.generic import UpdateView, CreateView, DeleteView, DetailView
 from .forms import NoticiaForm
 from .models import *
 import json
@@ -63,3 +63,6 @@ class deleteNoticia(LoginRequiredMixin,DeleteView):
         else:
             raise PermissionDenied
 
+class detailNoticia(DetailView):
+    template_name = 'detail/news_detail.html'
+    model = Noticia

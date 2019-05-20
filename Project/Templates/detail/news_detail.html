@@ -1,0 +1,8 @@
+{% extends 'homepage.html' %}
+{% block title %}<title>Noticia - {{ noticia.titular }}</title>{% endblock %}
+{% block content %}
+    <span vocab="http://schema.org/" typeof="NewsArticle">
+    <span property="headline"><p><b style="margin-left: 20px">{{ noticia.titular }}</b></p></span>
+    <p style="margin-left: 30px">{{ noticia.cuerpo }}</p><br>
+    </span>
+{% endblock %}
