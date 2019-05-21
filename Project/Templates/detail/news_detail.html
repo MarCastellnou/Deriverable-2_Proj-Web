@@ -2,9 +2,24 @@
 {% block title %}<title>Noticia - {{ noticia.titular }}</title>{% endblock %}
 {% block content %}
     <span vocab="http://schema.org/" typeof="NewsArticle">
-    <span property="datePublished"><p><b style="margin-left: 20px">{{ noticia.date }}</b></p></span>
-    <span property="author"><p><b style="margin-left: 20px">Escrita por el usuario {{ noticia.user }}</b></p></span>
-    <span property="headline"><h5><b style="margin-left: 20px">{{ noticia.titular }}</b></h5></span>
-        <span property="articleBody"><p style="margin-left: 30px">{{ noticia.cuerpo }}</p><br></span>
+      <span property="datePublished">
+          <p><b style="margin-left: 20px">{{ noticia.fecha}}</b></p>
+      </span>
+    <span property="author" typeof="Person">
+         <span property="name"> <p><b style="margin-left: 20px">Escrita por el usuario {{ noticia.user }}</b></p>
+      </span></span>
+    <span property="headline">
+      <h5><b style="margin-left: 20px">{{ noticia.titular }}</b></h5>
+      </span>
+    <span property="articleBody">
+      <p style="margin-left: 30px">{{ noticia.cuerpo }}</p><br/>
+      </span>
+    <span property="publisher" typeof="Organization">
+        <span property="name"><p><b style="margin-left: 20px">Fuente:{{ noticia.fuente }}</b></p></span>
     </span>
+    <span property="image"><img src="{{noticia.imagen }}"></span>
+</span>
 {% endblock %}
+
+
+
