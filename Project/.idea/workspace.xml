@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6fd1631-aee0-4773-a5ab-3667f00eedcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/criptomonedas.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/criptomonedas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/detail/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/detail/news_detail.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/criptomonedas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            <state relative-caret-position="244">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="32" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -66,10 +64,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Templates/detail/news_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+            <state relative-caret-position="51">
+              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="32" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#span#0;n#span#2;n#div#0;n#div#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,13 +104,13 @@
         <option value="$PROJECT_DIR$/criptomonedasapp/views.py" />
         <option value="$PROJECT_DIR$/criptomonedasapp/models.py" />
         <option value="$PROJECT_DIR$/Templates/noticias.html" />
-        <option value="$PROJECT_DIR$/Templates/criptomonedas.html" />
         <option value="$PROJECT_DIR$/Templates/detail/news_detail.html" />
+        <option value="$PROJECT_DIR$/Templates/criptomonedas.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
@@ -215,23 +214,22 @@
       <workItem from="1558426164844" duration="7000" />
       <workItem from="1558430366614" duration="5674000" />
       <workItem from="1558446174634" duration="1897000" />
-      <workItem from="1558602280328" duration="4110000" />
+      <workItem from="1558602280328" duration="4630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15167000" />
+    <option name="totallyTimeSpent" value="15687000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2857143" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.58945906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2733711" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2765043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -295,17 +293,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/criptomonedas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        <state relative-caret-position="244">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/detail/news_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+        <state relative-caret-position="51">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="32" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#span#0;n#span#2;n#div#0;n#div#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

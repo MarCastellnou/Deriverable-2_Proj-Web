@@ -24,12 +24,13 @@
                         </tr>
                         {% for i in moneda %}
                             <tr align="center">
+                            <span vocab="http://schema.org/" typeof="ExchangeRateSpecification">
                                 <span property="currency"><td>{{ i.name }}</td></span>
                                 <span property=""><td>${{ i.market_cap_usd }}</td></span>
-                                <span property="amount"><td>${{ i.price_usd }}</td></span>
-                                <span property=""><td>${{ i.24h_volume_usd }}</td></span>
+                                <span property="currentExchangeRate	"><td>${{ i.price_usd }}</td></span>
+                                <span property="exchangeRateSpread"><td>${{ i.24h_volume_usd }}</td></span>
                                 <span property=""><td>{{ i.percent_change_24h }}% </td></span>
-                                 </span>
+                                </span>
                             </tr>
                         {% endfor %}
                     </table>
