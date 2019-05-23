@@ -24,7 +24,6 @@
                         </tr>
                         {% for i in moneda %}
                             <tr align="center">
-                            <span vocab="http://schema.org/" typeof="DatedMoneySpecification">
                                 <span property="currency"><td>{{ i.name }}</td></span>
                                 <span property=""><td>${{ i.market_cap_usd }}</td></span>
                                 <span property="amount"><td>${{ i.price_usd }}</td></span>

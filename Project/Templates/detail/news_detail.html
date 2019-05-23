@@ -1,25 +1,37 @@
 {% extends 'homepage.html' %}
 {% block title %}<title>Noticia - {{ noticia.titular }}</title>{% endblock %}
 {% block content %}
-    <span vocab="http://schema.org/" typeof="NewsArticle">
-      <span property="datePublished">
-          <p><b style="margin-left: 20px">{{ noticia.fecha}}</b></p>
-      </span>
-    <span property="author" typeof="Person">
-         <span property="name"> <p><b style="margin-left: 20px">Escrita por el usuario {{ noticia.user }}</b></p>
-      </span></span>
-    <span property="headline">
-      <h5><b style="margin-left: 20px">{{ noticia.titular }}</b></h5>
-      </span>
-    <span property="articleBody">
-      <p style="margin-left: 30px">{{ noticia.cuerpo }}</p><br/>
-      </span>
-    <span property="publisher" typeof="Organization">
-        <span property="name"><p><b style="margin-left: 20px">Fuente:{{ noticia.fuente }}</b></p></span>
-    </span>
-    <span property="image"><img src="{{noticia.imagen }}"></span>
-</span>
-{% endblock %}
+   <div class="container">
+        <div class="row">
+            <div class="col-md"></div>
+            <div class="col-md">
+                <span vocab="http://schema.org/" typeof="NewsArticle">
+                    <div class="card" style="width: 18rem;">
+                      <span property="image">
+                          <img class="card-img-top" width="400" height="200" src="{{noticia.imagen }}">
+                      </span>
+                      <div class="card-body">
+                          <span property="datePublished"><p><b>{{ noticia.fecha }}</b></p></span>
+                          <span property="headline">
+                            <h5 class="card-title">{{ noticia.titular }}</h5>
+                          </span>
+                          <span property="author" typeof="Person">
+                            <span property="name"> <p style="font-size: 13px;">Escrita por el usuario: {{ noticia.user }}</p></span>
+                          </span>
+                          <span property="articleBody">
+                            <p class="card-text">{{ noticia.cuerpo }}</p><br/>
+                          </span>
+                          <span property="publisher" typeof="Organization">
+                            <span property="name"><p>Fuente:{{ noticia.fuente }}</p></span>
+                          </span>
+                      </div>
+                    </div>
+                  </span>
+            </div>
+            <div class="col-md"></div>
+        </div>
+    </div>
 
+{% endblock %}
 
 
