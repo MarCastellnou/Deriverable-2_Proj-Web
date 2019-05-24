@@ -34,6 +34,8 @@ In this version, the part of the news has been improved by making these with a m
 
 A more visual style has been added to the cryptocurrency part that allows to differentiate between them.
 
+RDFa has been included in HTML that allows machines to better recognize structured data in our case we have used in the field of news and coins, although the latter is not recognized by the google tool.
+
 __Credits__
 -------------------
 * [Xavi Berga](https://github.com/xaps97)
