@@ -37,9 +37,9 @@ A more visual style has been added to the cryptocurrency part that makes it poss
 RDFa has been included in HTML that allows the machines to better recognize the structured data in our case that we have used in the news and currencies field, although the Google tool does not recognize the latter.
 
 To carry out all this activity, the following tools have been used to perform the marking correctly and to verify it:
-*[schema.org](https://schema.org/)
-*[Google Structured Data Testing tool](https://search.google.com/structured-data/testing-tool)
-*[Tool to test the generated RDFa](http://rdfa.info/play/)
+* [schema.org](https://schema.org/)
+* [Google Structured Data Testing tool](https://search.google.com/structured-data/testing-tool)
+* [Tool to test the generated RDFa](http://rdfa.info/play/)
 
 __Credits__
 -------------------
