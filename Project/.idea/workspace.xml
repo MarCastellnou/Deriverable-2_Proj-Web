@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6fd1631-aee0-4773-a5ab-3667f00eedcc" name="Default Changelist" comment="" />
+    <list default="true" id="d6fd1631-aee0-4773-a5ab-3667f00eedcc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/detail/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/detail/news_detail.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +15,17 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Templates/detail/news_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="146" selection-start-line="10" selection-start-column="146" selection-end-line="10" selection-end-column="146" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,8 +43,8 @@
         <option value="$PROJECT_DIR$/criptomonedasapp/views.py" />
         <option value="$PROJECT_DIR$/criptomonedasapp/models.py" />
         <option value="$PROJECT_DIR$/Templates/noticias.html" />
-        <option value="$PROJECT_DIR$/Templates/detail/news_detail.html" />
         <option value="$PROJECT_DIR$/Templates/criptomonedas.html" />
+        <option value="$PROJECT_DIR$/Templates/detail/news_detail.html" />
       </list>
     </option>
   </component>
@@ -46,7 +59,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -80,11 +92,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../Deriverable_Proj-Web/Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../xd/Deriverable_Proj-Web/Project" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -143,21 +156,24 @@
       <workItem from="1558602280328" duration="4630000" />
       <workItem from="1558681044248" duration="47000" />
       <workItem from="1558772974464" duration="571000" />
+      <workItem from="1558773848358" duration="289000" />
+      <workItem from="1558863139576" duration="551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16471000" />
+    <option name="totallyTimeSpent" value="17311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37785235" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3885906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27620396" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27620396" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -228,12 +244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/detail/news_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="32" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#span#0;n#div#1;n#div#0;n#div#0;n#span#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#span#0;n#span#2;n#div#0;n#div#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="146" selection-start-line="10" selection-start-column="146" selection-end-line="10" selection-end-column="146" />
         </state>
       </provider>
     </entry>
