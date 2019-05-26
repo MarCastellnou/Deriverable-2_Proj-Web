@@ -30,11 +30,16 @@ Finally, the [coinmarketcap.com](https://coinmarketcap.com/) API has been added,
 
 __Deliverable 3.0__
 -------------------
-In this version, the part of the news has been improved by making these with a more structured design.
+In this version, the part of the news has been improved by making them with a more structured design. The model of the news database has been modified to make a more accurate representation of the RDFa mark.
 
-A more visual style has been added to the cryptocurrency part that allows to differentiate between them.
+A more visual style has been added to the cryptocurrency part that makes it possible to differentiate them.
 
-RDFa has been included in HTML that allows machines to better recognize structured data in our case we have used in the field of news and coins, although the latter is not recognized by the google tool.
+RDFa has been included in HTML that allows the machines to better recognize the structured data in our case that we have used in the news and currencies field, although the Google tool does not recognize the latter.
+
+To carry out all this activity, the following tools have been used to perform the marking correctly and to verify it:
+*[schema.org](https://schema.org/)
+*[Google Structured Data Testing tool](https://search.google.com/structured-data/testing-tool)
+*[Tool to test the generated RDFa](http://rdfa.info/play/)
 
 __Credits__
 -------------------
